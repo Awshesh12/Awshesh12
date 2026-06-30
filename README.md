@@ -32,8 +32,8 @@ I build deep learning systems and apply ML to real-world problems. Currently wor
 ### GitHub at a glance
 
 <p>
-  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Awshesh12&show_icons=true&theme=tokyonight&rank_icon=github&hide_border=true">
-  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Awshesh12&layout=compact&theme=tokyonight&hide_border=true">
+  <img alt="GitHub stats" src="https://github-readme-stats-2rzypvgzx.vercel.app/api?username=Awshesh12&show_icons=true&theme=tokyonight&rank_icon=github&hide_border=true">
+  <img alt="Top languages" src="https://github-readme-stats-2rzypvgzx.vercel.app/api/top-langs/?username=Awshesh12&layout=compact&theme=tokyonight&hide_border=true">
 </p>
 <p>
   <img alt="Streak" src="https://streak-stats.demolab.com?user=Awshesh12&theme=tokyonight&date_format=j%20M%5B%20Y%5D&hide_border=true">
