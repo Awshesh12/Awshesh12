@@ -4,6 +4,13 @@
 
 I build deep learning systems and apply ML to real-world problems. Currently working on agentic AI and applied ML infrastructure at Otsuka Shokai.
 
+<!-- Snake animation. Redrawn daily by .github/workflows/snake.yml - do not edit dist/ by hand. -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dist/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="dist/github-snake.svg">
+  <img alt="A snake eating my GitHub contribution graph" src="dist/github-snake.svg">
+</picture>
+
 ---
 
 ### Tech I work with
@@ -38,13 +45,6 @@ I build deep learning systems and apply ML to real-world problems. Currently wor
 <p>
   <img alt="Streak" src="https://streak-stats.demolab.com?user=Awshesh12&theme=tokyonight&date_format=j%20M%5B%20Y%5D&hide_border=true">
 </p>
-
-<!-- Snake animation. Redrawn daily by .github/workflows/snake.yml - do not edit dist/ by hand. -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dist/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="dist/github-snake.svg">
-  <img alt="A snake eating my GitHub contribution graph" src="dist/github-snake.svg">
-</picture>
 
 ---
 
