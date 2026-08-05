@@ -1,0 +1,53 @@
+name: Generate Snake Animation
+
+on:
+  schedule:
+    # 15:00 UTC == 00:00 JST, so the graph is redrawn as the Tokyo day rolls over.
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+  # Regenerate immediately whenever this workflow itself changes. Scoped to this
+  # one path so the bot's own commits to dist/ can never re-trigger the run.
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/snake.yml'
+
+# A scheduled run and a manual run must never race each other to push.
+concurrency:
+  group: snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Render the contribution graph as a snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Commit regenerated animation
+        run: |
+          set -euo pipefail
+
+          git config user.name "Awshesh12"
+          git config user.email "asharma@es.iitr.ac.in"
+
+          git add dist/
+          if git diff --cached --quiet; then
+            echo "Contribution graph unchanged - nothing to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(snake): regenerate contribution snake animation"
+          git push
